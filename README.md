@@ -15,4 +15,4 @@ The original repository can be found [here](https://github.com/FrexG/ycgcr_leaf_
 
 ### Accomplished Tasks
 - [X] Commit the original code
-- [ ] Refactor original code
+- [X] Refactor original code
