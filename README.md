@@ -50,9 +50,11 @@ project
 |           |   ...
 |
 └── Models
+|   └── best_model.h5
+|
 └── Plots
 ```
-Obs.: _Models_ and _Plots_ folders start empty. They **must** be created or the code might give some errors.
+Obs.: _Plots_ folder start empty. It **must** be created or the code might give some errors (Only if the _Accuracy Tests.ipynb_ file is going to be run).
 
 ---
 
