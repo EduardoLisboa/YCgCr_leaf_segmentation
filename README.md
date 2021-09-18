@@ -19,7 +19,7 @@ To simplify, the version ready to be used with the training of the model can be 
 
 ---
 ## Folder structure
-In order of the project to work properly, the folder structure must be as follows:
+In order for the project to work properly, the folder structure must be as follows:
 
 ```
 project
