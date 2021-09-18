@@ -19,6 +19,8 @@ This dataset contains Brazilian Arabica Coffee leaves images which are 2048 x 10
 
 To simplify, the version ready to be used with the training and testing of the model can be found [here][drive_dataset].
 
+And the model to use with the main code can be found [here][drive_best_model].
+
 ---
 ## Folder structure
 In order for the project to work properly, the folder structure must be as follows:
@@ -60,7 +62,9 @@ Obs.: _Models_ and _Plots_ folders start empty. They **must** be created or the 
 - [X] Make first CNN model
 - [X] Upload dataset
 - [X] Implement accuracy evaluation
-- [ ] Improve CNN model
+- [X] Improve CNN model
+- [X] Upload best model
+- [ ] Merge model with main program
 
 
 [pwc]: https://paperswithcode.com
@@ -68,3 +72,4 @@ Obs.: _Models_ and _Plots_ folders start empty. They **must** be created or the 
 [original_repository]: https://github.com/FrexG/ycgcr_leaf_segmentation
 [BRACOL_dataset]: https://data.mendeley.com/datasets/yy2k5y8mxg/1
 [drive_dataset]: https://drive.google.com/file/d/1-L_L6BWnu-1szQvsKBoMz18K64-_iAGV/view?usp=sharing
+[drive_best_model]: https://drive.google.com/file/d/1bG_zCeSDgv538UkPjF62TjqpeHZ8ZBkK/view?usp=sharing
