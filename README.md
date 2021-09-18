@@ -48,7 +48,7 @@ project
 └── Models
 └── Plots
 ```
-Obs.: _Models_ and _Plots_ folders start empty. They **must** be created of the code might give some errors.
+Obs.: _Models_ and _Plots_ folders start empty. They **must** be created or the code might give some errors.
 
 ---
 
