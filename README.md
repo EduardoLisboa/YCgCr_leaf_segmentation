@@ -6,20 +6,53 @@ The objective is to try to replicate and possibly improve the original paper by 
 Student: Eduardo Antônio de Lucena Lisboa
 
 ---
-
+## Original paper
 Original paper was obtained on [Papers With Code][pwc] and can be found [here][original_paper].
 
 The original repository can be found [here][original_repository].
 
 ---
-### Dataset
+## Dataset
 The dataset used was the BRACOL dataset, a public domain Brazilian Arabica Coffee leaves dataset, which can be found [here][BRACOL_dataset].
 
 To simplify, the version ready to be used with the training of the model can be found [here][drive_dataset].
 
 ---
+## Folder structure
+In order of the project to work properly, the folder structure must be as follows:
 
-### Accomplished Tasks
+```
+project
+│   README.md
+|   dataset.csv
+│   k_means.py   
+│   main.py
+|
+└── Dataset
+│   └── testing
+│   |   │   1.jpg
+│   |   │   2.jpg
+│   |   │   ...
+|   |
+│   └── training
+|       └── diseased
+|       |   |   68.jpg
+|       |   |   100.jpg
+|       |   |   ...
+|       |
+|       └── healthy
+|           |   170.jpg
+|           |   174.jpg
+|           |   ...
+|
+└── Models
+└── Plots
+```
+Obs.: _Models_ and _Plots_ folders start empty. They **must** be created of the code might give some errors.
+
+---
+
+## Accomplished Tasks
 - [X] Commit the original code
 - [X] Refactor original code
 - [X] Make first CNN model
