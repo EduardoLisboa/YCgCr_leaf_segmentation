@@ -54,7 +54,7 @@ project
 |
 └── Plots
 ```
-Obs.: _Plots_ folder start empty. It **must** be created or the code might give some errors (Only if the _Accuracy Tests.ipynb_ file is going to be run).
+Obs.: _Plots_ folder start empty. It **must** be created or the code will not work.
 
 ---
 
