@@ -12,7 +12,7 @@ Original paper was obtained on [Papers With Code][pwc] and can be found [here][o
 The original repository can be found [here][original_repository].
 
 ---
-## Dataset
+## Dataset and Model
 The dataset used was the BRACOL dataset, a public domain Brazilian Arabica Coffee leaves dataset, which can be found [here][BRACOL_dataset].
 
 This dataset contains Brazilian Arabica Coffee leaves images which are 2048 x 1024 pixels is size and labeled with four diseases (these being _Rust_, _Miner_, _Cercospora_ and _Phoma_) and their severity. For this project, only was considered if the leaf has a disease or not.
@@ -51,6 +51,11 @@ project
 |
 └── Models
 |   └── best_model.h5
+|
+└── images
+|   |   img1.jpg
+|   |   img2.jpg
+|   |   ...
 |
 └── Plots
 ```
