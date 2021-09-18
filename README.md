@@ -59,6 +59,7 @@ Obs.: _Models_ and _Plots_ folders start empty. They **must** be created or the 
 - [X] Refactor original code
 - [X] Make first CNN model
 - [X] Upload dataset
+- [X] Implement accuracy evaluation
 - [ ] Improve CNN model
 
 
