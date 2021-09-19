@@ -76,7 +76,7 @@ Obs.: _Plots_ folder starts empty. It **must** be created or the code will not w
 - [X] Upload example images
 - [X] Merge model with main program
 - [X] Document CNN notebook
-- [ ] Document accuracy tests notebook
+- [X] Document Accuracy Tests notebook
 - [ ] Document main program
 
 
