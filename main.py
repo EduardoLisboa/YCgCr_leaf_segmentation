@@ -1,24 +1,57 @@
+# Original imports
 from ycgcr import YCBCR
 from k_means import KMEANS
 import os
+
+# Imports for the model and utilities
+import numpy as np
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras.models import load_model
+from time import sleep
 
 
 def join_path(imagepath, file):
     return os.path.join(imagepath, file)
 
 
+def is_file(imagepath, file):
+    return os.path.isfile(join_path(imagepath, file))
+
+
+def prediction(model, imagepath):
+    class_names = ['diseased', 'healthy']
+    img = keras.preprocessing.image.load_img(imagepath, target_size=(512, 512))
+    img_array = keras.preprocessing.image.img_to_array(img)
+    img_array = tf.expand_dims(img_array, 0)  # Create a batch
+
+    preds = model.predict(img_array)
+    score = tf.nn.softmax(preds[0])
+
+    return 0 if class_names[np.argmax(score)] == 'healthy' else 1
+
+
 def main():
     image_path = 'images'
     if os.path.exists(image_path):
+        # Load the predictions model
+        model = load_model('Models/best_model.h5')
+
         # List all files from a given directory
-        filenames = [file for file in os.listdir(image_path) if os.path.isfile(join_path(image_path, file))]
+        filenames = [file for file in os.listdir(image_path) if is_file(image_path, file)]
 
         # Filter files to only have image files of type JPG, JPEG and PNG
         image_files = [img_file for img_file in filenames if img_file.split('.')[-1] in ['jpg', 'jpeg', 'png']]
 
         for img in image_files:
             full_image_path = os.path.join(image_path, img)
-            KMEANS(full_image_path)
+            if prediction(model, full_image_path) == 0:
+                print(f'Image {img.split(".")[0]} is a healthy leaf!\n')
+                continue
+            else:
+                print(f'Image {img.split(".")[0]} is a diseased leaf!\n')
+                KMEANS(full_image_path, img)
+                sleep(0.5)
     else:
         print("Incorrent path")
 
