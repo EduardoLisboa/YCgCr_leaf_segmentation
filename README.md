@@ -53,8 +53,8 @@ project
 |   └── best_model.h5
 |
 └── images
-|   |   img1.jpg
-|   |   img2.jpg
+|   |   1.jpg
+|   |   2.jpg
 |   |   ...
 |
 └── Plots
