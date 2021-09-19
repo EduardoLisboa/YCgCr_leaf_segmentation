@@ -4,7 +4,10 @@ import numpy as np
 
 
 class KMEANS:
-    def __init__(self, image):
+    image_name: str
+
+    def __init__(self, image, img_name):
+        KMEANS.image_name = img_name.split('.')[0]
         image_path = image
         bgr_image = cv.imread(image_path)
         self.remove_background(bgr_image)
@@ -76,5 +79,8 @@ class KMEANS:
         axs[2].set_xticks([])
         axs[2].set_yticks([])
         axs[2].imshow(disease_area, cmap="gray")
+
+        plt.savefig(f'Plots/{KMEANS.image_name}.png')
+        print('Image saved in "Plots" folder.\n')
 
         plt.show()
