@@ -28,6 +28,8 @@ In order for the project to work properly, the folder structure must be as follo
 ```
 project
 │   README.md
+|   Accuracy Tests.ipynb
+|   CNN_Model.ipynb
 |   dataset.csv
 │   k_means.py   
 │   main.py
@@ -59,7 +61,7 @@ project
 |
 └── Plots
 ```
-Obs.: _Plots_ folder start empty. It **must** be created or the code will not work.
+Obs.: _Plots_ folder starts empty. It **must** be created or the code will not work.
 
 ---
 
