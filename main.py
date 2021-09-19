@@ -12,14 +12,35 @@ from time import sleep
 
 
 def join_path(imagepath, file):
+    """
+    Returns the full path of a file.
+
+    :param imagepath: (str) Path to the folder where the file is
+    :param file: (str) File name
+    :return: (str) The full path of the file
+    """
     return os.path.join(imagepath, file)
 
 
 def is_file(imagepath, file):
+    """
+    Returns if the path provided is a file
+
+    :param imagepath: (str) Path to the folder where the file is
+    :param file: (str) File name
+    :return:  (bool) True if the path is a file, else returns False
+    """
     return os.path.isfile(join_path(imagepath, file))
 
 
 def prediction(model, imagepath):
+    """
+    Predicts if a leaf image is healthy or not
+
+    :param model: Tensorflow trained model
+    :param imagepath: (str) Full path of an image file
+    :return: (int) 0 if predicted image is healthy, else returns 1
+    """
     class_names = ['diseased', 'healthy']
     img = keras.preprocessing.image.load_img(imagepath, target_size=(512, 512))
     img_array = keras.preprocessing.image.img_to_array(img)

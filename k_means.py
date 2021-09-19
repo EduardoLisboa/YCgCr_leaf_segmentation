@@ -7,6 +7,12 @@ class KMEANS:
     image_name: str
 
     def __init__(self, image, img_name):
+        """
+        Constructs all the necessary attributes for the KMEANS object.
+
+        :param image: (str) Full path of an image file
+        :param img_name: (str) Name of the image file
+        """
         KMEANS.image_name = img_name.split('.')[0]
         image_path = image
         bgr_image = cv.imread(image_path)
@@ -14,6 +20,12 @@ class KMEANS:
 
     @staticmethod
     def remove_background(leaf_image):
+        """
+        Removes the background of an image based on its HSV values.
+
+        :param leaf_image: An image file to have its background extracted
+        :return: None
+        """
         # Gaussian blur image to remove noise
         blured = cv.GaussianBlur(leaf_image, (1, 1), 0)
 
@@ -41,6 +53,13 @@ class KMEANS:
 
     @staticmethod
     def segment_diseased(bg_extracted_hsv, rgb_image):
+        """
+        Segments an image to show the segmented part as white and the rest as black
+
+        :param bg_extracted_hsv: An image file to be segmented
+        :param rgb_image: An image file to be sent to the "plot_images" function
+        :return: None
+        """
         bg_extracted_rgb = cv.cvtColor(bg_extracted_hsv, cv.COLOR_HSV2RGB)
         ycrcb = cv.cvtColor(bg_extracted_rgb, cv.COLOR_RGB2YCrCb)
 
@@ -64,6 +83,14 @@ class KMEANS:
 
     @staticmethod
     def plot_images(original, processed, disease_area):
+        """
+        Plots three images to the screen and saves them in a PNG file
+
+        :param original: An image file to be ploted
+        :param processed: An image file to be ploted
+        :param disease_area: An image file to be ploted
+        :return: None
+        """
         fig, axs = plt.subplots(1, 3)
         axs[0].set_title('Original Image')
         axs[0].set_xticks([])
