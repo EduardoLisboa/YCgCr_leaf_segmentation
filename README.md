@@ -77,7 +77,7 @@ Obs.: _Plots_ folder starts empty. It **must** be created or the code will not w
 - [X] Merge model with main program
 - [X] Document CNN notebook
 - [X] Document Accuracy Tests notebook
-- [ ] Document main program
+- [X] Document main files
 
 
 [pwc]: https://paperswithcode.com
