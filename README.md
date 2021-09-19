@@ -72,7 +72,10 @@ Obs.: _Plots_ folder start empty. It **must** be created or the code will not wo
 - [X] Improve CNN model
 - [X] Upload best model
 - [X] Upload example images
-- [ ] Merge model with main program
+- [X] Merge model with main program
+- [X] Document CNN notebook
+- [ ] Document accuracy tests notebook
+- [ ] Document main program
 
 
 [pwc]: https://paperswithcode.com
