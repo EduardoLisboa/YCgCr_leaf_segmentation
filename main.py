@@ -70,7 +70,7 @@ def main():
                 print(f'Image {img.split(".")[0]} is a healthy leaf!\n')
                 continue
             else:
-                print(f'Image {img.split(".")[0]} is a diseased leaf!\n')
+                print(f'Image {img.split(".")[0]} is a diseased leaf!')
                 KMEANS(full_image_path, img)
                 sleep(0.5)
     else:
