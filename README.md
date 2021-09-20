@@ -5,6 +5,8 @@ The objective is to try to replicate and possibly improve the original paper by 
 
 Student: Eduardo Antônio de Lucena Lisboa
 
+[Presentation][drive_presentation] and [Report][drive_report]
+
 ---
 ## Original paper
 Original paper was obtained on [Papers With Code][pwc] and can be found [here][original_paper].
@@ -88,3 +90,5 @@ Obs.2: The images inside the _testing_ and _images_ folders just have the same n
 [BRACOL_dataset]: https://data.mendeley.com/datasets/yy2k5y8mxg/1
 [drive_dataset]: https://drive.google.com/file/d/1-L_L6BWnu-1szQvsKBoMz18K64-_iAGV/view?usp=sharing
 [drive_best_model]: https://drive.google.com/file/d/1bG_zCeSDgv538UkPjF62TjqpeHZ8ZBkK/view?usp=sharing
+[drive_presentation]: https://drive.google.com/file/d/11l3PKvupUdbaRXdib1-ywroScGYDQH4Y/view?usp=sharing
+[drive_report]: https://drive.google.com/file/d/14EYz3I_LR_zExLFZyOxtixivOG1cQ6VR/view?usp=sharing
