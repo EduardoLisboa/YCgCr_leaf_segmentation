@@ -62,6 +62,7 @@ project
 └── Plots
 ```
 Obs.: _Plots_ folder starts empty. It **must** be created or the code will not work.
+Obs.2: The images inside the _testing_ and _images_ folders just have the same name but are different images.
 
 ---
 
